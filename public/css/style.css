@@ -1,0 +1,667 @@
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --hijau-tua: #0F5132;
+    --hijau-muda: #27ae60;
+    --krem: #FAF7F0;
+    --coklat: #8B4513;
+    --merah: #dc3545;
+    --kuning: #ffc107;
+    --abu: #6c757d;
+}
+
+body {
+    background-color: var(--krem);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, .btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input, textarea, select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* ============== NAVBAR ============== */
+.navbar {
+    background-color: var(--hijau-tua);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+}
+
+.navbar-menu a:hover {
+    color: #a8e6c2;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+}
+
+/* ============== BERANDA ============== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%;
+    min-height: 400px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    color: var(--hijau-tua);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn-hijau, .btn {
+    background-color: var(--hijau-muda);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-hijau:hover, .btn:hover {
+    background-color: #219653;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* ============== PRODUK UNGGULAN ============== */
+.section {
+    padding:20px 5%;
+    margin-top:0;
+}
+
+.section h2 {
+    text-align: center;
+    color: var(--hijau-tua);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.link-lihat {
+    color: var(--hijau-muda);
+    font-weight: 500;
+}
+
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.produk-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+}
+
+.produk-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.produk-card h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.harga {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--hijau-muda);
+    margin-bottom: 10px;
+}
+
+.btn-tambah {
+    background-color: var(--hijau-tua);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn-tambah:hover {
+    background-color: #0c4028;
+}
+
+/* ============== PRODUK PAGE ============== */
+.produk-page-container {
+    display: flex;
+    gap: 30px;
+    padding: 30px 5%;
+}
+
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--hijau-tua);
+}
+
+.kategori-item {
+    padding: 10px 12px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kategori-item:hover, .kategori-item.active {
+    background-color: #e8f5ee;
+    color: var(--hijau-tua);
+    font-weight: 500;
+}
+
+.produk-konten {
+    flex: 1;
+}
+
+.page-title {
+    font-size: 26px;
+    color: var(--hijau-tua);
+    margin-bottom: 5px;
+}
+
+.page-desc {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.search-produk {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.search-produk input {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+
+/* ============== PEMESANAN ============== */
+.pesan-container {
+    padding: 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pesan-container h2 {
+    text-align: center;
+    color: var(--hijau-tua);
+    margin-bottom: 30px;
+}
+
+.pesan-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.pesan-box, .form-box, .kotak {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.pesan-box h3, .form-box h3, .kotak h2 {
+    font-size: 18px;
+    color: var(--hijau-tua);
+    margin-bottom: 20px;
+}
+
+.pesan-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pesan-item-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pesan-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.jumlah-kontrol {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.jumlah-kontrol button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.total-pesan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-konfirmasi {
+    background-color: var(--hijau-tua);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-konfirmasi:hover {
+    background-color: #0c4028;
+}
+
+/* ============== KONTAK ============== */
+.kontak-container {
+    padding: 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kontak-container h2 {
+    text-align: center;
+    color: var(--hijau-tua);
+    margin-bottom: 30px;
+}
+
+.kontak-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.map-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #e8f5ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hijau-tua);
+    font-size: 18px;
+}
+
+.kontak-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.info-card h4 {
+    font-size: 16px;
+    color: var(--hijau-tua);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-hubungi {
+    background-color: var(--hijau-muda);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-hubungi:hover {
+    background-color: #219653;
+}
+
+/* ============== ADMIN ============== */
+.admin-body {
+    background: #f0f0f0;
+    min-height: 100vh;
+}
+
+.admin-header {
+    background: var(--hijau-tua);
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admin-header h2 {
+    font-size: 20px;
+}
+
+.admin-container {
+    padding: 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+th, td {
+    padding: 14px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: var(--hijau-tua);
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: #f9f9f9;
+}
+
+.btn-edit {
+    background: var(--kuning);
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.btn-edit:hover {
+    background: #e0ac00;
+}
+
+.btn-hapus {
+    background: var(--merah);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-hapus:hover {
+    background: #b02a37;
+}
+
+.btn-tambah-produk {
+    background: var(--hijau-muda);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.btn-tambah-produk:hover {
+    background: #219653;
+}
+
+.kembali {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.15);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.kembali:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+.error {
+    color: var(--merah);
+    margin-bottom: 15px;
+}
+
+/* Login Page */
+.login-page-body {
+    background: linear-gradient(135deg, #0F5132 0%, #27ae60 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: var(--hijau-tua);
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.login-box .form-group {
+    text-align: left;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: var(--hijau-tua);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: var(--hijau-muda);
+    transform: translateY(-2px);
+}
+
+.error-box {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Form Page */
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-card h2 {
+    color: var(--hijau-tua);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ============== FOOTER ============== */
+.footer {
+    background-color: var(--hijau-tua);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ============== RESPONSIVE ============== */
+@media(max-width: 768px) {
+    .hero, .produk-page-container, .pesan-grid, .kontak-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    .sidebar { width: 100%; }
+    .hero-text { padding-right: 0; }
+    .navbar-menu { display: flex; flex-wrap: wrap; gap: 5px; }
+}

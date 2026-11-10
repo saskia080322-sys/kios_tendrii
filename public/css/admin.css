@@ -1,0 +1,303 @@
+.* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #FAF7F0;
+}
+
+.judul-besar {
+    background: #0F5132;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.kotak {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.tombol-kembali {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.tombol-kembali:hover {
+    color: #0F5132;
+}
+
+.tombol-tambah {
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.tombol-tambah:hover {
+    background: #0F5132;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #0F5132;
+    color: white;
+}
+
+.tombol-ubah {
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.tombol-hapus {
+    background: #c0392b;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form button {
+    margin-top: 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #0F5132;
+}
+
+.menu a {
+    display: block;
+    background: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background: #27ae60;
+    color: white;
+}
+
+.login-kotak {
+    max-width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.login-kotak h2 {
+    text-align: center;
+    color: #0F5132;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #c0392b;
+    text-align: center;
+    margin-bottom: 15px;
+}.* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #FAF7F0;
+}
+
+.judul-besar {
+    background: #0F5132;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.kotak {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.tombol-kembali {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.tombol-kembali:hover {
+    color: #0F5132;
+}
+
+.tombol-tambah {
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.tombol-tambah:hover {
+    background: #0F5132;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #0F5132;
+    color: white;
+}
+
+.tombol-ubah {
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.tombol-hapus {
+    background: #c0392b;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form button {
+    margin-top: 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #0F5132;
+}
+
+.menu a {
+    display: block;
+    background: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background: #27ae60;
+    color: white;
+}
+
+.login-kotak {
+    max-width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.login-kotak h2 {
+    text-align: center;
+    color: #0F5132;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #c0392b;
+    text-align: center;
+    margin-bottom: 15px;
+}
